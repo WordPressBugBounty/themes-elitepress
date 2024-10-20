@@ -1,0 +1,123 @@
+#accordion-section-elitepress_pro_section h3
+{background-color: #f5f5f5!important;
+color:#555 !important;
+font-size:14px !important;
+ }
+ 
+.upgrade {
+  background-color: #1d4467;
+  border-color: #1d4467;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+   margin-bottom: 0px;
+  padding: 13px 30px 14px 29px;
+  text-transform: uppercase;
+  width: 54%;
+  border-radius:2px;
+  text-decoration:none;
+}
+.review {
+  background-color: #82b541;
+  border-color: #1ec846;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+   margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 13px 30px 14px 29px;
+  text-transform: uppercase;
+  width: 54%;
+  border-radius:2px;
+  text-decoration:none;
+}
+.document{
+  background-color: #ee591f;
+  border-color: #ef9c28;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 13px 30px 14px 29px;
+  text-transform: uppercase;
+  width: 54%;
+  border-radius:2px;
+  text-decoration:none;
+}
+.pro-box
+{display:block;text-align:center; margin-bottom: 0px;}
+.pro-vesrion 
+{text-align:center; margin-top:15px;}
+
+.service {
+  background-color: #31a3dd;
+  border-color: #ef9c28;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 13px 30px 14px 29px;
+  text-transform: uppercase;
+  width: 54%;
+  border-radius: 2px;
+  }
+  .pro-vesrion p{line-height:20px;} 
+  
+
+ #customize-control-elitepress_lite_options-webriti_stylesheet input[type="radio"] {display:none !important;}
+ #customize-control-elitepress_lite_options-webriti_stylesheet img{height:45px; 
+ width:120px !important;}
+  #customize-control-elitepress_lite_options-webriti_stylesheet label{display:inline-block; margin-left: 0px !important;}
+  
+  .course{
+  background-color: #0d6db8;
+  border-color: #ef9c28;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 13px 30px 14px 29px;
+  text-transform: uppercase;
+  width: 54%;
+  border-radius:2px;
+  text-decoration:none;
+}
+
+.pro-box
+{display:block;text-align:center; margin-bottom: 0px;}
+.pro-vesrion 
+{text-align:center; margin-top:15px;}
+
+.pro-box .service {
+    background-color: #00a7d1;
+    border-color: #ef9c28;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 13px 30px 14px 29px;
+    text-transform: uppercase;
+    width: 54%;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+li#accordion-section-elitepress_pro_section h3.accordion-section-title { background-color:#31a3dd; color:#fff;}
+#accordion-section-elitepress_email_course_section h3{ font-size: 14px;font-weight: 700;}
+
+#accordion-section-testimonial_setting .accordion-section-title:after {content: "\f160";}
+#accordion-section-client_section_settings .accordion-section-title:after {content: "\f160";}
+#accordion-section-front_conatct_setting .accordion-section-title:after {content: "\f160";}
+#accordion-panel-template_settings .accordion-section-title:after {content: "\f160";}
+#accordion-panel-layout_manager .accordion-section-title:after {content: "\f160";}

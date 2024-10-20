@@ -1,0 +1,35 @@
+.sortable{ 
+list-style-type: none;
+ margin: 0;
+ padding: 0; 
+ margin-bottom: 10px;
+ min-height:100px;
+ padding:5px 0;
+ }
+ .customizer_layout {
+  background-color:#ccc;
+ }
+ .sortable li {
+ margin: 5px;
+ padding: 5px;
+ width: 215px; 
+ background-color:#fff;
+ border:1px solid #000;
+ text-align:center;
+ }
+ 
+ #customize-control-elitepress_lite_options-front_page_data label,#customize-control-elitepress_lite_options-webriti_stylesheet input{
+ display:none !important;
+ }
+ #customize-control-elitepress_lite_options-webriti_back_image input[type="radio"] {display:none !important;}
+ 
+ .color_scheem_active{
+	border: 1px solid #000 !important;
+    border-radius: 2px;
+ }
+ #customize-control-elitepress_lite_options-webriti_stylesheet img{height:45px; 
+ width:45px !important;}
+ #customize-control-elitepress_lite_options-webriti_stylesheet label{display:inline-block; margin-left: 0px !important;}
+ #customize-control-elitepress_lite_options-webriti_back_image img {height:45px !important; 
+ width:45px !important;}
+ #customize-control-elitepress_lite_options-webriti_back_image label{display:inline-block; margin-left: 0px !important;}

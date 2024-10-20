@@ -1,0 +1,170 @@
+== Changelog ==
+
+@version 2.0.7
+1.Updated font-awesome library.
+@version 2.0.6
+1.Fixed white space issue.
+@version 2.0.5
+1. Added logo width Settings.
+2. Added  Local google font feature.
+@version 2.0.4
+1. Recommended the Post Slider and Seo Optimized Images plugin on the options page.
+@version 2.0.4
+1. Recommended the Post Slider and Seo Optimized Images plugin on the options page.
+@version 2.0.3
+1. Fixed escaping issue in customizer notice.
+@version 2.0.2
+1. Fixed the issues with PHP 8.
+2. Fixed some style issues.
+@version 2.0.1
+1. Fixed footer widget layout issue. 
+@version 2.0
+1. Fixed prefix and WBR:Social icon widget issues.
+2. Changed some customizer strings and removed unnecessary code.
+@version 1.9.9
+1. Fixed the theme check warning.
+@version 1.9.8
+1. Fixed the banner settings issues.
+@version 1.9.7
+1. Fixed the styling issues.
+2. Screenshot updated.
+@version 1.9.6
+1. Removed google-plus social icon and updated the theme option page.
+@version 1.9.5
+1. Removed default value from Top header widget area.
+2. Fixed footer copyright and latest news section empty markup issues.
+@version 1.9.4
+1. Fixed user comment issue and corrected the escaping and translation functions.
+@version 1.9.3
+1. Implemented "Links within content must be underlined" guideline.
+2. Fixed keyboard navigation issue.
+3. Added contact form 7 image license and removed unnecessary code.
+@version 1.9.2
+1. Fixed issue like prefix, escaping, IE11 and other.
+2. Removed custom CSS box.
+@version 1.9.1
+1. Changed the content of the screenshot.
+@version 1.9
+1. Implement the Accessibility including skip to content and keyboard navigation.
+2. Declared all the licenses.
+3. Changed the screenshot image.
+4. Move the homepage sections from theme to companion plugin.
+5. Fixed all the other issues.
+@version 1.8.4
+1. Fixed Theme option page layout issue.
+@version 1.8.3
+1. Move Trustworthy Websites setting from customizer to About Elitepress Theme option.
+@version 1.8.2
+1. Update list of features mentioned in View PRO details tab.
+@version 1.8.1
+1. Remove Lock Icons
+@version 1.8
+1. Upadte customizer and added upgrade to pro links.
+@version 1.7.9.1
+1. Added read more settings in service section.
+@version 1.7.9
+1. Added home page section ON/OFF setting.
+@version 1.7.8
+1. Fixed service section enable/disable issue.
+@version 1.7.7
+1. Fixed service icon and image issue.
+@version 1.7.6
+1. Added trustworthy website tab.
+@version 1.7.5
+1. Fixed white space issue in customizer.
+@version 1.7.4
+1. Fixed undefined color error in service section oh homepage.
+2. Fixed header layout.
+3. Added go to customizer button in about page.
+4. Change portfolio images.
+@version 1.7.3
+1. Added Image support in service.
+@version 1.7.2
+1. Strings Upadted (Suggested by Transifex)
+@version 1.7.1
+1. Strings Upadted (Suggested by Transifex)
+@version 1.7
+1. Strings Upadted (Suggested by Transifex)
+@version 1.6.9
+1. Strings Upadted (Suggested by Transifex)
+@version 1.6.8
+1. Added About theme section.
+@version 1.6.7
+1. Update screen reader css.
+@version 1.6.6
+1. Fixed string issue.
+@version 1.6.5
+1. Update Author URI and Theme URI change http to https secure.
+@version 1.6.4
+1. Added Repetator control for slider and service.
+2. Added Wide and box layout setting.
+3. Added Two theme color variation.
+4. Added Header widget.
+5. Changed footer variation.
+@version 1.6.3
+1. Added styling for upgrade to pro setting.
+@version 1.6.2
+1. Updated font awesome icon 4.6.3 to 4.7.0
+@version 1.6.1
+1. Updated Strings.
+@version 1.6
+1. Update Theme Description.
+2. Change Screenshot Image.
+@version 1.5
+1. Update Font awesome icon 4.5.0 to 4.6.3
+2. Add Title Tag Support.
+3. Add featured-images, blog, footer-widgets Tag.
+@version 1.4
+1. Update Font awesome icon 4.4.0 to 4.5.0
+2. Remove Unused Image.
+@version 1.3
+1. Added Customizer.
+2. Add Screen Reader CSS.
+3. Update Font-awesome Version.
+@version 1.2.2
+1. Add Home page template.
+@Version 1.2.1
+1. Add Theme URI.
+2. Remove Font awesome CDN.
+
+@Version 1.2
+1. Change option panel stylling.
+2. Remove unused space
+3. Enqueue Style.css
+4. Enqueue Jquery
+5. Remove font awesome icons folder.
+6. Add Home.php
+
+@version 1.1
+1. Add Post slider.
+2. Update pot file.
+@version 1.0
+1. Solve Font issue.
+2. Enable Copyright section on server.
+@version 0.3
+1. Solve styling issue.
+@version 0.2.5
+1. Add unminified version bootstrap.min.js for unless provide origianl profile.
+@Version 0.2.4
+1. Remove Dot(.) in elitpress option panel file.
+@Version 0.2.3
+1. Add some escape tags, missing banner_header.php , footer.php , home_page_header_setting.php
+2. Add  sanitizing for custom css box.
+3. Solve front page Reading Issue
+
+@Version 0.2.2
+1. Add bootstrap.js for unless provide origianl profile.
+2. use sens default.
+3. Add Escape missing home URL('\').
+4. Add Attribution for fontawesome.
+5. Add interlization missing.
+6. Update Pot file.
+
+@Version 0.2.1
+1. Change screenshot image
+2. Change Responsive and color image for webriti Theme
+3. Add footer copywriting setting
+
+@Version 0.2
+1. Change all function prefix and text domain to elitepress.
+@Version 0.1 released
