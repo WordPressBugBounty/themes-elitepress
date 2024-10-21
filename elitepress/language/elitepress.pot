@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elitepress\n"
-"POT-Creation-Date: 2023-02-02 17:53+0530\n"
+"POT-Creation-Date: 2024-10-17 18:42+0530\n"
 "PO-Revision-Date: 2019-04-03 17:38+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -107,70 +107,76 @@ msgstr ""
 msgid "Changelog"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:425
+#: admin/inc/class-webriti-about-page.php:427 functions.php:293
+#: functions/class-tgm-plugin-activation.php:2717
+#: functions/customizer-notify/elitepress-customizer-notify-section.php:257
+msgid "Install"
+msgstr ""
+
+#: admin/inc/class-webriti-about-page.php:434
 #, php-format
 msgid "Install %s Now"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:427
+#: admin/inc/class-webriti-about-page.php:436
 #: admin/inc/include-companion.php:82
 msgid "Install & Activate"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:444
+#: admin/inc/class-webriti-about-page.php:454
 #, php-format
 msgid "Activate %s Now"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:446
+#: admin/inc/class-webriti-about-page.php:456
 #: functions/class-tgm-plugin-activation.php:2726
 #: functions/customizer/customizer_recommended_plugin.php:19
 msgid "Activate"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:449
+#: admin/inc/class-webriti-about-page.php:459
 #: functions/class-tgm-plugin-activation.php:2321
 msgid "Active"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:559
+#: admin/inc/class-webriti-about-page.php:569
 #: admin/inc/include-companion.php:81 admin/inc/include-companion.php:98
-#: functions.php:179
+#: functions.php:289
 msgid "Webriti Companion"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:562
+#: admin/inc/class-webriti-about-page.php:572
 msgid ""
 "It is highly recommended that you install the Webriti Companion plugin to "
 "have access to the advance Frontpage sections and other theme features"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:566 functions.php:174
+#: admin/inc/class-webriti-about-page.php:576 functions.php:152
 msgid "Contact Form 7"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:569
+#: admin/inc/class-webriti-about-page.php:579
 msgid ""
 "it is recommended that you install the Contact Form 7 plugin to show contact "
 "form on pages"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:573 functions.php:189
+#: admin/inc/class-webriti-about-page.php:583 functions.php:162
 msgid "Seo Optimized Images"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:576
+#: admin/inc/class-webriti-about-page.php:586
 msgid ""
 "It is recommended that you install & activate the Seo Optimized Images "
 "plugin to dynamically insert SEO Friendly alt attributes and title "
 "attributes to your Images."
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:580 functions.php:184
+#: admin/inc/class-webriti-about-page.php:590 functions.php:157
 msgid "Carousel, Recent Post Slider and Banner Slider"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:583
+#: admin/inc/class-webriti-about-page.php:593
 msgid ""
 "To display the posts in a beautiful slider with multiple options, install & "
 "activate this plugin."
@@ -686,8 +692,8 @@ msgstr ""
 msgid "Leave a Reply"
 msgstr ""
 
-#: content-single.php:20 content.php:20 fullwidth.php:13 functions.php:129
-#: functions.php:136 functions.php:230 page.php:13
+#: content-single.php:20 content.php:20 fullwidth.php:13 functions.php:114
+#: functions.php:119 functions.php:201 page.php:13
 msgid "Read More"
 msgstr ""
 
@@ -847,17 +853,30 @@ msgid "Search title"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: functions.php:70
+#: functions.php:63
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:76
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:87
+#: functions.php:77
 msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:286
+#, php-format
+msgid "Thank you for installing the %1$s theme."
+msgstr ""
+
+#: functions.php:288
+msgid "We highly recommend you to install and activate the"
+msgstr ""
+
+#: functions.php:291
+msgid "This plugin will unlock enhanced features to build a beautiful website."
 msgstr ""
 
 #: functions/class-tgm-plugin-activation.php:327
@@ -1190,10 +1209,6 @@ msgstr ""
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: functions/class-tgm-plugin-activation.php:2717
-msgid "Install"
-msgstr ""
-
 #: functions/class-tgm-plugin-activation.php:2723
 msgid "Update"
 msgstr ""
@@ -1302,6 +1317,10 @@ msgstr ""
 #: functions/class-tgm-plugin-activation.php:3520
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/customizer-notify/elitepress-customizer-notify-section.php:252
+msgid "Webriti Comapnion"
 msgstr ""
 
 #: functions/customizer/customizer-blog.php:8
@@ -1500,15 +1519,19 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: functions/customizer/customizer_header.php:5
+#: functions/customizer/customizer_header.php:12
+msgid "Logo Width"
+msgstr ""
+
+#: functions/customizer/customizer_header.php:24
 msgid "Header Widget Section"
 msgstr ""
 
-#: functions/customizer/customizer_header.php:19
+#: functions/customizer/customizer_header.php:36
 msgid "Select column layout"
 msgstr ""
 
-#: functions/customizer/customizer_header.php:33
+#: functions/customizer/customizer_header.php:49
 msgid "Click here to add a header widget"
 msgstr ""
 
@@ -1553,6 +1576,18 @@ msgstr ""
 
 #: functions/customizer/customizer_theme_style.php:69
 msgid "Theme Color Schemes"
+msgstr ""
+
+#: functions/customizer/customizer_typography.php:13
+msgid "Font Settings"
+msgstr ""
+
+#: functions/customizer/customizer_typography.php:17
+msgid "Performance(Google Font)"
+msgstr ""
+
+#: functions/customizer/customizer_typography.php:30
+msgid "Load Google Fonts Locally?"
 msgstr ""
 
 #: functions/menu/default_menu_walker.php:23

@@ -2,8 +2,8 @@
 
 Contributors: priyanshumittal
 Requires at least: 4.5
-Tested up to: 6.4
-Stable tag: 2.0.7
+Tested up to: 6.6
+Stable tag: 2.0.8
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,6 +29,8 @@ ElitePress is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
+@version 2.0.8
+1.Updated the options page.
 @version 2.0.7
 1.Updated font-awesome library.
 @version 2.0.6

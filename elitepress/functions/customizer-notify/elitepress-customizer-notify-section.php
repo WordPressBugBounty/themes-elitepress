@@ -244,47 +244,18 @@ class elitepress_Customizer_Notify_Section extends WP_Customize_Section {
 					<# } #>
 				</h3>
 				<div class="elitepress-theme-recomended-actions_container" id="plugin-filter">
-					<# if( data.recommended_actions.length > 0 ){ #>
-						<# for (action in data.recommended_actions) { #>
-							<div class="elitepress-recommeded-actions-container epsilon-required-actions" data-index="{{ data.recommended_actions[action].index }}">
-								<# if( !data.recommended_actions[action].check ){ #>
-									<div class="elitepress-epsilon-recommeded-actions">
-										<p class="title">{{ data.recommended_actions[action].title }}</p>
-										<span data-action="dismiss" class="dashicons dashicons-no elitepress-customizer-notify-dismiss-recommended-action" id="{{ data.recommended_actions[action].id }}"></span>
-										<div class="description">{{{ data.recommended_actions[action].description }}}</div>
-										<# if( data.recommended_actions[action].plugin_slug ){ #>
-											<div class="custom-action">
-												<p class="plugin-card-{{ data.recommended_actions[action].plugin_slug }} action_button {{ data.recommended_actions[action].class }}">
-													<a data-slug="{{ data.recommended_actions[action].plugin_slug }}" class="{{ data.recommended_actions[action].button_class }}" href="{{ data.recommended_actions[action].url }}">{{ data.recommended_actions[action].button_label }}</a>
-												</p>
-											</div>
-										<# } #>
-										<# if( data.recommended_actions[action].help ){ #>
-											<div class="custom-action">{{{ data.recommended_actions[action].help }}}</div>
-										<# } #>
-									</div>
-								<# } #>
-							</div>
-						<# } #>
-					<# } #>
-
 					<# if( data.recommended_plugins.length > 0 ){ #>
 						<# for (action in data.recommended_plugins) { #>
 							<div class="elitepress-recommeded-actions-container epsilon-recommended-plugins" data-index="{{ data.recommended_plugins[action].index }}">
 								<# if( !data.recommended_plugins[action].check ){ #>
 									<div class="elitepress-epsilon-recommeded-actions">
-										<p class="title">{{ data.recommended_plugins[action].title }}</p>
+										<p class="title"><?php echo esc_html__( 'Webriti Comapnion', 'elitepress' ); ?></p>
 										<span data-action="dismiss" class="dashicons dashicons-no elitepress-customizer-notify-dismiss-button-recommended-plugin" id="{{ data.recommended_plugins[action].id }}"></span>
 										<div class="description">{{{ data.recommended_plugins[action].description }}}</div>
 										<# if( data.recommended_plugins[action].plugin_slug ){ #>
-											<div class="custom-action">
-												<p class="plugin-card-{{ data.recommended_plugins[action].plugin_slug }} action_button {{ data.recommended_plugins[action].class }}">
-													<a data-slug="{{ data.recommended_plugins[action].plugin_slug }}" class="{{ data.recommended_plugins[action].button_class }}" href="{{ data.recommended_plugins[action].url }}">{{ data.recommended_plugins[action].button_label }}</a>
-												</p>
+											<div class="custom-action 01">
+												<button id="install-plugin-button-welcome-page" data-plugin-url="<?php echo esc_url( 'https://webriti.com/extensions/webriti-companion.zip');?>"><?php echo esc_html__( 'Install', 'elitepress' ); ?></button>
 											</div>
-										<# } #>
-										<# if( data.recommended_plugins[action].help ){ #>
-											<div class="custom-action">{{{ data.recommended_plugins[action].help }}}</div>
 										<# } #>
 									</div>
 								<# } #>

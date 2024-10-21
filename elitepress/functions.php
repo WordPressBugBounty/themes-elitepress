@@ -154,11 +154,6 @@ function elitepress_register_required_plugins() {
             'required' => false,
         ),
 		array(
-           'name' => esc_html__('Webriti Companion','elitepress'),
-            'slug' => 'webriti-companion',
-            'required' => false,
-        ),
-        array(
             'name' => esc_html__('Carousel, Recent Post Slider and Banner Slider','elitepress'),
             'slug' => 'spice-post-slider',
 	            'required' => false,
@@ -264,4 +259,183 @@ if ( ! function_exists( 'elitepress_customizer_preview_scripts' ) ) {
 	    }
 	}
 add_action( 'customize_preview_init', 'elitepress_customizer_preview_scripts' ); 
-?>
+
+
+$elitepress_theme = wp_get_theme();
+if( $elitepress_theme->name == 'ElitePress' || $elitepress_theme->name == 'ElitePress child' || $elitepress_theme->name == 'ElitePress Child' ) {
+    // Notice to add required plugin
+    function elitepress_admin_plugin_notice_warn() {
+        global $hook_suffix;
+        $theme_name = wp_get_theme();
+        if($hook_suffix === 'themes.php'){
+            if ( get_option( 'dismissed-elitepress_comanion_plugin', false ) ) {
+               return;
+            }
+            if ( function_exists('webriti_companion_activate')) {
+                return;
+            }?>
+            <div class="updated notice is-dismissible elitepress-theme-notice">
+
+                <div class="owc-header">
+                    <h2 class="theme-owc-title">               
+                        <svg height="60" width="60" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70"><defs><style>.cls-1{font-size:33px;font-family:Verdana-Bold, Verdana;font-weight:700;}</style></defs><title>Artboard 1</title><text class="cls-1" transform="translate(-0.56 51.25)">WC</text></svg>
+                        <?php echo esc_html('Webriti Companion','elitepress');?>
+                    </h2>
+                </div>
+                <div class="elitepress-theme-content">
+                    <h3><?php printf (esc_html__('Thank you for installing the %1$s theme.', 'elitepress'), esc_html($theme_name)); ?></h3>
+
+                    <p><?php esc_html_e( 'We highly recommend you to install and activate the', 'elitepress' ); ?>
+                        <b><?php esc_html_e( 'Webriti Companion', 'elitepress' ); ?></b> plugin.
+                        <br>
+                        <?php esc_html_e( 'This plugin will unlock enhanced features to build a beautiful website.', 'elitepress' ); ?>
+                    </p>
+                    <button id="install-plugin-button-welcome-page" data-plugin-url="<?php echo esc_url( 'https://webriti.com/extensions/webriti-companion.zip');?>"><?php echo esc_html__( 'Install', 'elitepress' ); ?></button>
+                </div>
+            </div>
+            
+            <script type="text/javascript">
+                jQuery(function($) {
+                $( document ).on( 'click', '.elitepress-theme-notice .notice-dismiss', function () {
+                    var type = $( this ).closest( '.elitepress-theme-notice' ).data( 'notice' );
+                    $.ajax( ajaxurl,
+                      {
+                        type: 'POST',
+                        data: {
+                          action: 'dismissed_notice_handler',
+                          type: type,
+                        }
+                      } );
+                  } );
+              });
+            </script>
+
+            <style>
+                .elitepress-theme-notice .theme-owc-title{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+                .elitepress-theme-notice p{
+                    font-size: 14px;
+                }
+                .updated.notice.elitepress-theme-notice h3{
+                    margin: 0;
+                }
+                div.elitepress-theme-notice.updated {
+                    border-left-color: #ee591f;
+                }
+                .elitepress-theme-content{
+                    padding: 0 0 1.2rem 3.57rem;
+                }
+            </style>
+       <?php
+        }
+    }
+    add_action( 'admin_notices', 'elitepress_admin_plugin_notice_warn' );
+    add_action( 'wp_ajax_dismissed_notice_handler', 'elitepress_ajax_notice_handler');
+
+    function elitepress_ajax_notice_handler() {
+        update_option( 'dismissed-elitepress_comanion_plugin', TRUE );
+    }
+}
+
+// Hook the AJAX action for logged-in users
+add_action('wp_ajax_elitepress_check_plugin_status', 'elitepress_check_plugin_status');
+
+function elitepress_check_plugin_status() {
+    if (!current_user_can('install_plugins')) {
+        wp_send_json_error('You do not have permission to manage plugins.');
+        return;
+    }
+
+    if (!isset($_POST['plugin_slug'])) {
+        wp_send_json_error('No plugin slug provided.');
+        return;
+    }
+
+    $plugin_slug = sanitize_text_field($_POST['plugin_slug']);
+    $plugin_main_file = $plugin_slug . '/' . $plugin_slug . '.php'; // Adjust this based on your plugin structure
+
+    // Check if the plugin exists
+    $plugins = get_plugins();
+    if (isset($plugins[$plugin_main_file])) {
+        if (is_plugin_active($plugin_main_file)) {
+            wp_send_json_success(array('status' => 'activated'));
+        } else {
+            wp_send_json_success(array('status' => 'installed'));
+        }
+    } else {
+        wp_send_json_success(array('status' => 'not_installed'));
+    }
+}
+
+// Existing AJAX installation function for installing and activating
+add_action('wp_ajax_elitepress_install_activate_plugin', 'elitepress_install_and_activate_plugin');
+
+function elitepress_install_and_activate_plugin() {
+    if (!current_user_can('install_plugins')) {
+        wp_send_json_error('You do not have permission to install plugins.');
+        return;
+    }
+
+    if (!isset($_POST['plugin_url'])) {
+        wp_send_json_error('No plugin URL provided.');
+        return;
+    }
+
+    // Include necessary WordPress files for plugin installation
+    include_once(ABSPATH . 'wp-admin/includes/file.php');
+    include_once(ABSPATH . 'wp-admin/includes/misc.php');
+    include_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
+    include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+
+    $plugin_url = esc_url($_POST['plugin_url']);
+    $plugin_slug = sanitize_text_field($_POST['plugin_slug']);
+    $plugin_main_file = $plugin_slug . '/' . $plugin_slug . '.php'; // Ensure this matches your plugin structure
+
+    // Download the plugin file
+    WP_Filesystem();
+    $temp_file = download_url($plugin_url);
+
+    if (is_wp_error($temp_file)) {
+        wp_send_json_error($temp_file->get_error_message());
+        return;
+    }
+
+    // Unzip the plugin to the plugins folder
+    $plugin_folder = WP_PLUGIN_DIR;
+    $result = unzip_file($temp_file, $plugin_folder);
+    
+    // Clean up temporary file
+    unlink($temp_file);
+
+    if (is_wp_error($result)) {
+        wp_send_json_error($result->get_error_message());
+        return;
+    }
+
+    // Activate the plugin if it was installed
+    $activate_result = activate_plugin($plugin_main_file);
+
+    
+
+    // Return success with redirect URL
+    wp_send_json_success(array('redirect_url' => admin_url('admin.php?page=elitepress-welcome')));
+}
+
+// Enqueue JavaScript for the button functionality
+add_action('admin_enqueue_scripts', 'elitepress_enqueue_plugin_installer_script');
+
+function elitepress_enqueue_plugin_installer_script() {
+    global $hook_suffix;
+    wp_enqueue_script('elitepress-plugin-installer-js',  ELITEPRESS_TEMPLATE_DIR_URI . '/admin/assets/js/plugin-installer.js', array('jquery'), null, true);
+    wp_localize_script('elitepress-plugin-installer-js', 'pluginInstallerAjax', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'hook_suffix' => $hook_suffix,
+        'nonce' => wp_create_nonce('plugin_installer_nonce'),
+
+    ));
+}
