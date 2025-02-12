@@ -28,6 +28,7 @@ class elitepress_Customizer_Notify {
 	
 	private $deactivate_button_label;
 
+	private $config;
 	
 	public static function init( $config ) {
 		if ( ! isset( self::$instance ) && ! ( self::$instance instanceof elitepress_Customizer_Notify ) ) {
