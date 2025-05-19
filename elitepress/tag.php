@@ -12,7 +12,7 @@ get_template_part('banner','header'); ?>
 			<div class="<?php elitepress_post_layout_class(); ?>" >
 				<div class="site-content">
 				<h1 class="archive-title">
-					<?php  esc_html_e( "Tag Archive", 'elitepress' ); echo ' '; echo esc_html(the_tags( '', false )); ?>
+					<?php esc_html_e('Tag Archive', 'elitepress'); echo ' ' . esc_html(single_tag_title('', false )); ?>
 				</h1>
 				<?php 
 				if ( have_posts() ) :

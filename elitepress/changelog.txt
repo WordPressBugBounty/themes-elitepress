@@ -1,16 +1,19 @@
 == Changelog ==
 
+@version 2.0.9.1
+1. Fixed blog post date and read more button design issue.
+2. Fixed tag page post title issue.
+@version 2.0.9
+1. Fixed error notice issue.
 @version 2.0.8
-1.Updated the options page.
+1. Updated the options page.
 @version 2.0.7
-1.Updated font-awesome library.
+1. Updated font-awesome library.
 @version 2.0.6
-1.Fixed white space issue.
+1. Fixed white space issue.
 @version 2.0.5
 1. Added logo width Settings.
 2. Added  Local google font feature.
-@version 2.0.4
-1. Recommended the Post Slider and Seo Optimized Images plugin on the options page.
 @version 2.0.4
 1. Recommended the Post Slider and Seo Optimized Images plugin on the options page.
 @version 2.0.3

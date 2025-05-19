@@ -19,7 +19,7 @@ get_template_part('banner','header');
 							</div>
 							
 								<div class="author-description">
-									<h5 class="author-title"><?php the_author_link(); ?></h5>
+									<h5 class="author-title"><a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) )); ?>"><?php echo esc_html( get_the_author());?></a></h5>
 									<p class="author-bio"><?php the_author_meta( 'description' ); ?></p>
 								</div>
 							

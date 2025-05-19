@@ -2,8 +2,8 @@
 
 Contributors: priyanshumittal
 Requires at least: 4.5
-Tested up to: 6.7
-Stable tag: 2.0.9
+Tested up to: 6.8
+Stable tag: 2.0.9.1
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,19 +24,22 @@ Keyboard navigation is working properly in the forward direction by using the ta
 
 == License ==
 
-ElitePress WordPress Theme, Copyright (C) 2015-2024, priyanshumittal
+ElitePress WordPress Theme, Copyright (C) 2015-2025, priyanshumittal
 ElitePress is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
+@version 2.0.9.1
+1. Fixed blog post date and read more button design issue.
+2. Fixed tag page post title issue.
 @version 2.0.9
-1.Fixed error notice issue.
+1. Fixed error notice issue.
 @version 2.0.8
-1.Updated the options page.
+1. Updated the options page.
 @version 2.0.7
-1.Updated font-awesome library.
+1. Updated font-awesome library.
 @version 2.0.6
-1.Fixed white space issue.
+1. Fixed white space issue.
 @version 2.0.5
 1. Added logo width Settings.
 2. Added  Local google font feature.
@@ -243,4 +246,4 @@ License: Under the terms of the GNU General Public License
 Source: https://wordpress.org/plugins/contact-form-7/
 
 * Images on /images folder
-Copyright (C) 2015-2024, Webriti and available as [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright (C) 2015-2025, Webriti and available as [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)

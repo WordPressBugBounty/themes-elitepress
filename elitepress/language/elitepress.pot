@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elitepress\n"
-"POT-Creation-Date: 2024-10-17 18:42+0530\n"
+"POT-Creation-Date: 2025-05-15 16:35+0530\n"
 "PO-Revision-Date: 2019-04-03 17:38+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,14 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -44,7 +43,7 @@ msgstr ""
 
 #: admin/inc/class-webriti-about-page.php:76 admin/inc/include-companion.php:43
 #: admin/inc/plugin-include-control.php:41
-#: functions/customizer-notify/elitepress-customizer-notify.php:111
+#: functions/customizer-notify/elitepress-customizer-notify.php:112
 msgid "Activating"
 msgstr ""
 
@@ -86,7 +85,7 @@ msgid "Getting Started"
 msgstr ""
 
 #: admin/inc/class-webriti-about-page.php:320
-#: functions/customizer/customizer_recommended_plugin.php:16
+#: functions/customizer/customizer_recommended_plugin.php:15
 msgid "Recommended Actions"
 msgstr ""
 
@@ -107,7 +106,7 @@ msgstr ""
 msgid "Changelog"
 msgstr ""
 
-#: admin/inc/class-webriti-about-page.php:427 functions.php:293
+#: admin/inc/class-webriti-about-page.php:427 functions.php:296
 #: functions/class-tgm-plugin-activation.php:2717
 #: functions/customizer-notify/elitepress-customizer-notify-section.php:257
 msgid "Install"
@@ -130,7 +129,7 @@ msgstr ""
 
 #: admin/inc/class-webriti-about-page.php:456
 #: functions/class-tgm-plugin-activation.php:2726
-#: functions/customizer/customizer_recommended_plugin.php:19
+#: functions/customizer/customizer_recommended_plugin.php:18
 msgid "Activate"
 msgstr ""
 
@@ -141,7 +140,7 @@ msgstr ""
 
 #: admin/inc/class-webriti-about-page.php:569
 #: admin/inc/include-companion.php:81 admin/inc/include-companion.php:98
-#: functions.php:289
+#: functions.php:292
 msgid "Webriti Companion"
 msgstr ""
 
@@ -866,16 +865,16 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:286
+#: functions.php:289
 #, php-format
 msgid "Thank you for installing the %1$s theme."
 msgstr ""
 
-#: functions.php:288
+#: functions.php:291
 msgid "We highly recommend you to install and activate the"
 msgstr ""
 
-#: functions.php:291
+#: functions.php:294
 msgid "This plugin will unlock enhanced features to build a beautiful website."
 msgstr ""
 
@@ -1535,22 +1534,22 @@ msgstr ""
 msgid "Click here to add a header widget"
 msgstr ""
 
-#: functions/customizer/customizer_recommended_plugin.php:12
+#: functions/customizer/customizer_recommended_plugin.php:11
 #, php-format
 msgid ""
 "Install and activate the %s plugin to take full advantage of all the "
 "features this theme has to offer."
 msgstr ""
 
-#: functions/customizer/customizer_recommended_plugin.php:17
+#: functions/customizer/customizer_recommended_plugin.php:16
 msgid "Recommended Plugin"
 msgstr ""
 
-#: functions/customizer/customizer_recommended_plugin.php:18
+#: functions/customizer/customizer_recommended_plugin.php:17
 msgid "Install and Activate"
 msgstr ""
 
-#: functions/customizer/customizer_recommended_plugin.php:20
+#: functions/customizer/customizer_recommended_plugin.php:19
 msgid "Deactivate"
 msgstr ""
 
